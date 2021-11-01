@@ -1,0 +1,74 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+.o{
+  padding:20px;
+  background-image:url("photo-1541701494587-cb58502866ab.jpeg");
+  background-size:cover
+}
+
+ .o2{
+  padding:0px;
+
+  border-radius:230px;
+
+  color:aqua;
+        background-image:url('https://cdn.dribbble.com/users/319473/screenshots/4111136/reinvently_insights_3.0.gif');
+  background-size:cover;
+         border: 5px solid white;
+     font-size:24px;
+
+
+}
+.o3{ padding:0px;
+
+  border-radius:230px;
+
+  color:aqua;
+        background-image:url('https://shrianshgoel.github.io/stunning-octo-bassoon/giphy.gif');
+    text-align: center;
+  text-decoration: none;
+  color:white;
+  background-size:cover;
+         border: 5px solid white;
+     font-size:24px;
+
+
+}
+.o3:hover{  transform: scale(1.2);}
+.o4{ padding:0px;
+
+  border-radius:230px;
+
+  color:aqua;
+        background-image:url('https://assets.editor.p5js.org/5fe6cd350045980020080300/59e3e4bd-3d72-46c5-a23f-9bf50eb3aafd.gif');
+    text-align: center;
+  text-decoration: none;
+  color:white;
+  background-size:cover;
+         border: 5px solid white;
+     font-size:24px;
+
+
+}
+.o4:hover{  transform: scale(1.2);}
+.o5{ padding:0px;
+
+  border-radius:230px;
+
+  color:aqua;
+        background-image:url('https://assets.editor.p5js.org/5f489f3570161300209d8535/780cb546-0053-4614-b04f-6b85fe223ee5.gif');
+    text-align: center;
+  text-decoration: none;
+  color:white;
+  background-size:cover;
+         border: 5px solid white;
+     font-size:24px;
+
+
+}
+.o5:hover{  transform: scale(1.2);}
