@@ -19,7 +19,7 @@ b1.size(width/5,height/5)
   b1.position(width/9.90,height/3)
   b1.class("o3");
   
-  b2= createElement("a","Qr code Generator").attribute("href","https://preview.p5js.org/shriansh.goel-jade/present/6j63lPQaN")
+  b2= createElement("a","Qr code Generator").attribute("href","shriansh.ml")
   b2.size(width/5,height/5)
    b2.position(width/2.50,height/3)
    b2.class("o4"); 
