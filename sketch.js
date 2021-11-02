@@ -1,49 +1,94 @@
-var button,b1,b2,b3;
-var heading
+var button,b1,b2
+
+var input,i2,b6
+var b3,b4,b5,b3x
+var c,c1
+var s=0
+  var click=2
+function preload(){
+  c1=loadImage("Screenshot_2021-10-11_1.54.06_PM-removebg-preview.png")
+}
 
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  button=createButton("")
-  button.size(width,height)
-  button.position(-width/2777,-height/2777)
-  button.class("o")
   
-  heading = createButton("Welcome to the world of Games created By Shriansh")
-  heading.position(width/2.90,height/22)
-  heading.size(width/3.50,height/7)
-  heading.class("o2")
   
-  b1=createElement("a","Fight for Life").attribute("href","https://preview.p5js.org/shriansh.goel-jade/present/mBmTWx5_I")
-b1.size(width/5,height/5)
-  b1.position(width/9.90,height/3)
-  b1.class("o3");
   
-  b2= createElement("a","Qr code Generator").attribute("href","https://preview.p5js.org/shriansh.goel-jade/present/6j63lPQaN")
-  b2.size(width/5,height/5)
-   b2.position(width/2.50,height/3)
-   b2.class("o4"); 
+    createCanvas(windowWidth, windowHeight);
   
-  b3=createElement("a","Iframe Browser").attribute("href","https://preview.p5js.org/shriansh.goel/present/JgY70OIIa")
-  b3.size(width/5,height/5)
-   b3.position(width/1.37,height/3)
-b3.class("o5")
+  
+
+  
+  b3x =createButton("")
+  b3x.class("h")
+  b3x.position(0,0)
+  b3x.size(windowWidth,windowHeight)
+  input=createInput("").attribute("Placeholder","Url or text");
+  input.position(width/2.70,height/2)
+  input.class("o")
+  input.size(width/6,height/10.60)
+  
+  
+   b3 =createElement("a","Be Sure to check this out").attribute("href","https://preview.p5js.org/shriansh.goel-jade/present/mBmTWx5_I")
+  b3.class("h2")
+  b3.position(width/1.50,height/2)
+  b3.size(width/07,width/13)
+
+  
+  b2= createButton("Your qr code here ↓")
+  b2.class("buttn2")
+  b2.position(width/8.20,height/2.50)
+  b2.size(width/5.70,width/18.50)
+
+       
+  
+  b1 = createButton("Don't Mind Me")
+  b1.hide()
+  
+  button =createButton("Generate a qr code")
+  button.position(width/2.70,height/1.50)
+  button.class("buttn")
+  button.size(width/5.10,width/18.50)
+  
+  
 }
 
 function draw() {
-  background(220);
- 
-}
-function windowResized(){
-   resizeCanvas(windowWidth, windowHeight);
-  button.size(windowWidth,windowHeight)
 
-  heading.position(width/2.90,height/22)
-  heading.size(width/3.50,height/7)
-  b3.size(width/5,height/5)
-   b3.position(width/1.37,height/3)
-  b2.size(width/5,height/5)
-   b2.position(width/2.50,height/3)
-   b1.size(width/5,height/5)
-  b1.position(width/9.90,height/3)
+  
+  background(220);
+  cursor('Screenshot_2021-10-11_1.54.06_PM-removebg-preview.png')
+  
+ b1.value("https://api.qrserver.com/v1/create-qr-code/?data=")
+
+  button.mousePressed(
+  ()=>{
+    i2 = createElement("Iframe").attribute("src",b1.value()+input.value())
+    i2.class("o2")
+    i2.position(width/9,height/2);
+      
+  
+    b5= createElement("a","Download").attribute("href","https://api.qrserver.com/v1/create-qr-code/?data="+input.value())
+  b5.class("buttn3")
+  b5.position(width/8.90,height/1.12)
+     b5.size(width/5.10,width/27)
+
+  }
+
+  
+  
+  )
+
+}
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+    input.position(width/2.70,height/2)
+   input.size(width/6,height/10.60)
+    button.size(width/5.10,width/18.50); button.position(width/2.70,height/1.50)
+    b2.position(width/8.20,height/2.50)
+  b2.size(width/5.70,width/18.50)
+    b3.position(width/1.50,height/2)
+  b3.size(width/07,width/13)
+  b3x.position(0,0)
+  b3x.size(windowWidth,windowHeight)
 }
